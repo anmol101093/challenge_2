@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "9d676c5d-dfd5-4fb2-8fed-5ea2e977609c",
+		"name": "challenge_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "request image frames",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"depth_min\": 9000.1,\r\n    \"depth_max\": 9000.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/challenge_2/search_images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"challenge_2",
+						"search_images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "App health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/challenge_2/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"challenge_2",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,17 @@
+# WARNING: this file is not suitable for production, please use with caution
+version: "3.8"
+
+services:
+
+  appcode:
+    image: challenge2_app
+    build: .
+    volumes:
+      - core:/code/core
+    container_name: challenge2_backend
+    ports:
+      - "5000:8000"
+
+volumes:
+  core:
+    driver: local
